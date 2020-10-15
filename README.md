@@ -27,10 +27,10 @@ The Salary distribution histogram plot!
 
 
 
-### OVERALL FEATURES DISTRIBUTION
+### FEATURES COUNT
 <img src = "Plots/Feature Distribution.png"/>
 
-### DISTRIBUTION OF CATEGORICAL VARIABLES IN THE DATASET
+### CATEGORICAL VARIABLES VS AVGERAGE SALARY
 
 <img src="Plots/Degree Distribution.png" width="250"/> &ensp;&ensp;&ensp; <img src="Plots/Industry Distribution.png" width="250"/> 
 <img src="Plots/Job Type Distribution.png" width="250"/> &ensp;&ensp;&ensp; <img src="Plots/Major Distribution.png" width="250"/>
@@ -40,7 +40,7 @@ The Salary distribution histogram plot!
 - All the majors have more or less the same salary distribution. Although Engineering major seems to have a little edge over Business major. None major has the lowest distribution
 - Industries 'Oil' and 'Finance' seems to have the highest salary distribution than others.
 
-### CORRELATION OF NUMERICAL VARIABLES IN THE DATASET
+### CORRELATION : NUMERICAL VARIABLES VS SALARY
 
 <img src="Plots/Experience And Salary Correlation.png" width="450"/>  <img src="Plots/Miles from Metropolis And Salary Correlation.png" width="450"/>
 
