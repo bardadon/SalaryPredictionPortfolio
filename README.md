@@ -30,7 +30,7 @@ Target Variable(Salary) Distribution
 ### FEATURES COUNT
 <img src = "Plots/Feature Distribution.png"/>
 
-### CATEGORICAL VARIABLES VS AVGERAGE SALARY
+### CATEGORICAL VARIABLES VS AVERAGE SALARY
 
 <img src="Plots/Degree Distribution.png" width="250"/> &ensp;&ensp;&ensp; <img src="Plots/Industry Distribution.png" width="250"/> 
 <img src="Plots/Job Type Distribution.png" width="250"/> &ensp;&ensp;&ensp; <img src="Plots/Major Distribution.png" width="250"/>
