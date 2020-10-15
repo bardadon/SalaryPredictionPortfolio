@@ -1,7 +1,7 @@
 # Salary Prediction Portfolio
 
 ## DEFINE THE PROBLEM
-For this Salary prediction portfolio I chose to examine 1 million job records along with their features such as **Job Type, Major, Degree, Industry, Years of Experience, Distance from the metropolis area** and the given **SALARY**. Based on this data, I'm going to build some predictive models and choose the best model (having lowest MSE) and use it to predict salaries of another 1 million jobs based on their features.
+For this Salary prediction portfolio I examined 1 million job records along with their features such as **Job Type, Major, Degree, Industry, Years of Experience, Distance from the metropolis area** and the given **SALARY**. Based on this data, I'm going to build some predictive models and choose the best model (having lowest MSE) and use it to predict salaries of another 1 million jobs based on their features.
 
 ### PROJECT OUTLINE:
 
@@ -18,12 +18,12 @@ The Salary distribution histogram plot!
 
 
 ### OVERALL FEATURES DISTRIBUTION
-<ims src = "Plots/Feature Distribution.png"/>
+<img src = "Plots/Feature Distribution.png"/>
 
 ### DISTRIBUTION OF CATEGORICAL VARIABLES IN THE DATASET
 
-<img src="Plots/jt.png" width="450"/> &ensp;&ensp;&ensp; <img src="Plots/ind.png" width="450"/> 
-<img src="Plots/deg.png" width="450"/> &ensp;&ensp;&ensp; <img src="Plots/maj.png" width="450"/>
+<img src="Plots/Degree Distribution.png" width="450"/> &ensp;&ensp;&ensp; <img src="Plots/Industry Distribution.png" width="450"/> 
+<img src="Plots/Job Type Distribution.png" width="450"/> &ensp;&ensp;&ensp; <img src="Plots/Major Distribution.png" width="450"/>
 
 - The job_type CEO has the highest salary distribution and the Janitor has the lowest.
 - The degrees 'Doctoral' and 'Masters' has a higher salary distribution and people with no major (i.e "NONE") has the lowest
@@ -32,14 +32,14 @@ The Salary distribution histogram plot!
 
 ### DISTRIBUTION OF NUMERICAL VARIABLES IN THE DATASET
 
-<img src="Plots/exp_line.png" width="450"/>  <img src="Plots/dist_lin.png" width="450"/>
+<img src="Plots/Experience And Salary Correlation.png" width="450"/>  <img src="Plots/Miles from Metropolis And Salary Correlation.png" width="450"/>
 
 - The yearsExperience variable has a positive and steady relationship with salary which means, as the years of experince increase the salary will also increase substantially
 - The milesFromMetropolis variable has a negative and steady relationship with salary which means, as the job location is further away from the metropolis the salary will go on decreasing
 
 ### CORRELATION MATRIX
 
-<img src="Plots/Corr_mat.png" />
+<img src="Plots/Correlation Matrix.png" />
 
 - Positive correlation between variables **job_Type, degree, major, industry, yearsExperience** and **Salary**
 - Negative correlation between variable **milesFromMetropolis** and **Salary**
@@ -48,7 +48,6 @@ The Salary distribution histogram plot!
 - **job_id & company_id** have a wekest possible or a negligible correlation with **salary**
 
 ## DEVELOP MODEL
-- The variable **job_Id** is unique to each and every data record and **company_Id** has a negligible correlation with **Salary**. Hence, it will be best to exclude these      variables for modeling. 
 - Variables **job_Type, degree, major, industry** are categorical variables. Thus, one-hot encoding them will be better for modeling.
 
 ### Based on the above EDA, I chose the following predictors for modelling
@@ -61,9 +60,9 @@ The Salary distribution histogram plot!
 |degree - High_school, Bachelors, Masters, Doctral |CAT - INT|4|
 |major - Biology, Business, Chemistry, CompSci, Literature, Math, Physics |CAT - INT|7|
 |industry - Education, Finance, Health, Oil, Service, Web |CAT - INT|6|
-|**Total number of predictors**||**27**|
+|**Total number of predictors**||**31**|
 
-Final dataset consists of 9999995 rows and 27 columns.
+Final dataset consists of 9999995 rows and 31 columns.
 I created a baseline model which predicted salaries for every record based on the **mean** of that paticular **job_type**.
 After prediction, I used Mean_squared_error as an evaluation metric and got the following result
 |Model|MSE_Score|
@@ -73,13 +72,13 @@ After prediction, I used Mean_squared_error as an evaluation metric and got the 
 I did a 70% training and 30% testing split on this dataset. Following models were used after feature engineering and their Mean_squared_error were obtained as follows:
 |No.|Model|MSE_Score|Standard-deviation|
 |---|-----|---------|------------------|
-|1. |Linear Regression|385.23|1.89|
-|2. |Random Forest Regressor|377.06|1.49|
-|3. |Gradient Boosting Regressor|359.87|1.37|
+|1. |Linear Regression|384.45|1.51|
+|2. |Random Forest Regressor|367.03|1.17|
+|3. |Gradient Boosting Regressor|358.07|1.45|
 
 #### Gradient Boosting Regressor provides the best results so I used this model to predict the salaries of a completely different job records and saved it in a csv file.
 
 The Plot below shows the feature importances of the features used in the model
-<img src="Plots/fi.png"/> 
+<img src="Plots/Features Importance.png"/> 
 
 # THANK YOU!
