@@ -13,13 +13,13 @@ For this Salary prediction portfolio I examined 1 million job records along with
 ## DISCOVER DATA
 
 ### Sample Of The Data
-|     jobId      | companyId	|    jobType   |	 degree  |  major  | industry|	yearsExperience |	milesFromMetropolis|
-|----------------|------------|--------------|-----------|---------|---------|------------------|--------------------|
-|JOB1362684407687|COMP37      |CFO           |MASTERS    |MATH     |HEALTH   |10                |83                  |
-|JOB1362684407688|COMP19      |CEO           |HIGH_SCHOOL|NONE     |WEB      |3                 |73                  |
-|JOB1362684407689|COMP52      |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |HEALTH   |10                |38                  |
-|JOB1362684407690|COMP38      |MANAGER       |DOCTORAL   |CHEMISTRY|AUTO     |8                 |17                  |
-|JOB1362684407691|COMP7       |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |FINANCE  |8                 |16                  |
+|     jobId      | companyId	|    jobType   |	 degree  |  major  | industry|	yearsExperience |	milesFromMetropolis| salary
+|----------------|------------|--------------|-----------|---------|---------|------------------|--------------------|--------|
+|JOB1362684407687|COMP37      |CFO           |MASTERS    |MATH     |HEALTH   |10                |83                  |130     |
+|JOB1362684407688|COMP19      |CEO           |HIGH_SCHOOL|NONE     |WEB      |3                 |73                  |101     |
+|JOB1362684407689|COMP52      |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |HEALTH   |10                |38                  |137     |
+|JOB1362684407690|COMP38      |MANAGER       |DOCTORAL   |CHEMISTRY|AUTO     |8                 |17                  |142     |
+|JOB1362684407691|COMP7       |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |FINANCE  |8                 |16                  |163     |
 
 The Salary distribution histogram plot!
 
