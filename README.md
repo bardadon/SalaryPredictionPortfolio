@@ -19,17 +19,11 @@ For this Salary prediction portfolio I examined 1 million job records along with
 ### Sample Of The Data
 
 |     jobId      | companyId |    jobType   |  degree  |  major  | industry| yearsExperience | milesFromMetropolis| salary
-
 |----------------|------------|--------------|-----------|---------|---------|------------------|--------------------|--------|
-
 |JOB1362684407687|COMP37      |CFO           |MASTERS    |MATH     |HEALTH   |10                |83                  |130     |
-
 |JOB1362684407688|COMP19      |CEO           |HIGH_SCHOOL|NONE     |WEB      |3                 |73                  |101     |
-
 |JOB1362684407689|COMP52      |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |HEALTH   |10                |38                  |137     |
-
 |JOB1362684407690|COMP38      |MANAGER       |DOCTORAL   |CHEMISTRY|AUTO     |8                 |17                  |142     |
-
 |JOB1362684407691|COMP7       |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |FINANCE  |8                 |16                  |163     |
 
 Target Variable (Salary) Distribution
@@ -83,7 +77,6 @@ After prediction, I used Mean_squared_error as an evaluation metric and got the 
 |Model|MSE_Score|
 
 |-----|-----|
-
 |Baseline_model|963.92|
 
 ## DEVELOP MODEL
@@ -97,21 +90,13 @@ After prediction, I used Mean_squared_error as an evaluation metric and got the 
 ### Based on the above EDA, I chose the following predictors for modeling
 
 | VARIABLE      | TYPE          |Columns|
-
 | ------------- | ------------- |-------|
-
 | yearsExperience  | INT  |1|
-
 | milesFromMetropolis  | INT  |1|
-
 |job_Type - CFO, CTO, CEO, Janitor, Junior, Manager, Senior, Vice-president |CAT - INT| 8|
-
 |degree - None, High_school, Bachelors, Masters, Doctral |CAT - INT|5|
-
 |major - None, Biology, Business, Chemistry, CompSci, Literature, Math, Physics, Engineering |CAT - INT|9|
-
 |industry - Education, Finance, Health, Oil, Service, Web, Auto |CAT - INT|7|
-
 |**Total number of predictors**||**31**|
 
 Final dataset comprises 9999995 rows and 31 columns.
@@ -119,13 +104,9 @@ Final dataset comprises 9999995 rows and 31 columns.
 I did a 80% training and 20% testing split on this dataset. I applied the Following models after feature engineering and collected their Mean_squared_error:
 
 |No.|Model|MSE_Score|Standard-deviation|
-
 |---|-----|---------|------------------|
-
 |1. |Linear Regression|384.45|1.51|
-
 |2. |Random Forest Regressor|367.03|1.17|
-
 |3. |Gradient Boosting Regressor|358.07|1.45|
 
 #### Gradient Boosting Regressor provides the best results, so I used this model to predict the salaries of the test data and saved it in a csv file.
