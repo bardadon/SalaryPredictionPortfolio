@@ -21,7 +21,7 @@ For this Salary prediction portfolio I examined 1 million job records along with
 |JOB1362684407690|COMP38      |MANAGER       |DOCTORAL   |CHEMISTRY|AUTO     |8                 |17                  |142     |
 |JOB1362684407691|COMP7       |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |FINANCE  |8                 |16                  |163     |
 
-The Salary distribution histogram plot!
+Target Variable(Salary) Distribution
 
 <img src="Plots/Salary Distribution.png"/>
 
