@@ -22,15 +22,15 @@ The Salary distribution histogram plot!
 
 ### DISTRIBUTION OF CATEGORICAL VARIABLES IN THE DATASET
 
-<img src="Plots/Degree Distribution.png" width="450"/> &ensp;&ensp;&ensp; <img src="Plots/Industry Distribution.png" width="450"/> 
-<img src="Plots/Job Type Distribution.png" width="450"/> &ensp;&ensp;&ensp; <img src="Plots/Major Distribution.png" width="450"/>
+<img src="Plots/Degree Distribution.png" width="250"/> &ensp;&ensp;&ensp; <img src="Plots/Industry Distribution.png" width="250"/> 
+<img src="Plots/Job Type Distribution.png" width="250"/> &ensp;&ensp;&ensp; <img src="Plots/Major Distribution.png" width="250"/>
 
 - The job_type CEO has the highest salary distribution and the Janitor has the lowest.
 - The degrees 'Doctoral' and 'Masters' has a higher salary distribution and people with no major (i.e "NONE") has the lowest
 - All the majors have more or less the same salary distribution. Although Engineering major seems to have a little edge over Business major. None major has the lowest distribution
 - Industries 'Oil' and 'Finance' seems to have the highest salary distribution than others.
 
-### DISTRIBUTION OF NUMERICAL VARIABLES IN THE DATASET
+### CORRELATION OF NUMERICAL VARIABLES IN THE DATASET
 
 <img src="Plots/Experience And Salary Correlation.png" width="450"/>  <img src="Plots/Miles from Metropolis And Salary Correlation.png" width="450"/>
 
@@ -45,7 +45,6 @@ The Salary distribution histogram plot!
 - Negative correlation between variable **milesFromMetropolis** and **Salary**
 - Strong positive correlation between **degree** and **major** which is likely to be
 - Weak yet positive correlation between **job_Type** and **degree, major** 
-- **job_id & company_id** have a wekest possible or a negligible correlation with **salary**
 
 ## DEVELOP MODEL
 - Variables **job_Type, degree, major, industry** are categorical variables. Thus, one-hot encoding them will be better for modeling.
