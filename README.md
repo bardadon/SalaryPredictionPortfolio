@@ -1,6 +1,6 @@
 # Salary Prediction Portfolio
 
-## DEFINE THE PROBLEM
+## THE PROBLEM
 For this Salary prediction portfolio I examined 1 million job records along with their features such as **Job Type, Major, Degree, Industry, Years of Experience, Distance from the metropolis area** and the given **SALARY**. Based on this data, I'm going to build some predictive models and choose the best model (having lowest MSE) and use it to predict salaries of another 1 million jobs based on their features.
 
 ### PROJECT OUTLINE:
@@ -11,6 +11,16 @@ For this Salary prediction portfolio I examined 1 million job records along with
 - **Predict salaries of another 1 million job features using the selected model**
 
 ## DISCOVER DATA
+
+### Sample Of The Data
+|     jobId      | companyId	|    jobType   |	 degree  |  major  | industry|	yearsExperience |	milesFromMetropolis|
+|----------------|------------|--------------|-----------|---------|---------|------------------|--------------------|
+|JOB1362684407687|COMP37      |CFO           |MASTERS    |MATH     |HEALTH   |10                |83                  |
+|JOB1362684407688|COMP19      |CEO           |HIGH_SCHOOL|NONE     |WEB      |3                 |73                  |
+|JOB1362684407689|COMP52      |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |HEALTH   |10                |38                  |
+|JOB1362684407690|COMP38      |MANAGER       |DOCTORAL   |CHEMISTRY|AUTO     |8                 |17                  |
+|JOB1362684407691|COMP7       |VICE_PRESIDENT|DOCTORAL   |PHYSICS  |FINANCE  |8                 |16                  |
+
 The Salary distribution histogram plot!
 
 <img src="Plots/Salary Distribution.png"/>
