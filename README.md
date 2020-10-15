@@ -75,7 +75,6 @@ I created a baseline model which predicted salaries for every record based on th
 After prediction, I used Mean_squared_error as an evaluation metric and got the following result :
 
 |Model|MSE_Score|
-
 |-----|-----|
 |Baseline_model|963.92|
 
