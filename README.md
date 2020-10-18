@@ -10,7 +10,7 @@ For this Salary prediction problem I examined 1 million job records along with t
 
 - Establish a baseline model, Engineer features, Optimize the data features
 
-- Select the best model with the lowest evaluation metric and
+- Select the best model with the lowest evaluation metric 
 
 - **Predict salaries of another 1 million job features using the selected model**
 
